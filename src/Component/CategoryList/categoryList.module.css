@@ -1,0 +1,95 @@
+.title{
+	color: var(  --primary-color);
+	padding: 1rem 0;
+	font-weight: 600;
+}
+.container{
+	margin-top: 4rem;
+}
+
+.description{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+  margin: 2rem 0;
+	font-size: 1rem;
+}
+.categories{
+	width: 100%;
+	gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.container__images{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	
+}
+.images__container {
+ margin:0 0.7rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+	flex: 2;
+	overflow: hidden;
+}
+
+.flex_image {
+  object-fit: cover;
+  width: 100%;
+	transition: transform 0.3s ease;
+	transform-origin: center center;
+  
+}
+.flex_image:hover{
+	transform: scale(1.1);
+}
+.images__container p {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333; /* Adjust text color as needed */
+}
+
+ 
+
+@media screen and (max-width: 1026px) {
+.container__images {
+ grid-template-columns: repeat(3, 1fr);
+  
+}
+}
+
+@media screen and (max-width: 800px) {
+.container__images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 646px) {
+.container__images{
+	 grid-template-columns: 1fr;
+}  
+
+/* .mood,
+.anxiety,
+.psychotic,
+.eating,
+.personality,
+.neuro,
+.trauma,
+.substance,
+.obssesive,
+.dissociative{
+	padding: 0.8rem;
+	border-radius: 10px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #000;
+} */
+.categories{
+	width: 100%;
+}
+}

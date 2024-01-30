@@ -1,0 +1,59 @@
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 6rem;
+}
+.container_wrapper{
+	background-color: var(--sec-color);
+	padding: 3rem 6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-radius: 10px;
+}
+
+.social_login{
+	padding: 1rem;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social_login:first-child{
+	background-color: #ff5555;
+}
+
+.social_login:nth-child(2){
+	background-color: #111;
+}
+.social_login:nth-child(3){
+	background-color: #087BEA;
+}
+
+@media screen and (max-width: 768px){
+.container_wrapper{
+	padding: 2rem 3rem;
+}
+.social_login{
+	padding: 0.7rem;
+	 
+}
+	
+}
+@media screen and (max-width: 640px){
+.container_wrapper{
+	padding:1.5rem;
+}
+.social_login{
+font-weight: 400;
+font-size: 1rem;
+	 
+}
+	
+}

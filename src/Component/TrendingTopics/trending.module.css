@@ -1,0 +1,73 @@
+ .category > div { 
+ width: 25%;
+ height: 5%;
+ border-radius: 50px;
+ font-size: 1.2rem;
+ 
+}
+.healthtips_desc{
+  font-size: 2.4rem;  
+  padding: 1.2rem; 
+ }
+  
+ .category{
+ display: flex;
+ gap: 1rem;
+ flex-wrap: wrap;  
+
+}
+.healthUpdate_title{
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+ .category > div {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.8rem; 
+  color: #6699CC;
+  width: 18%;
+  height: 2%;
+  border-radius: 50px;
+ 
+}
+.category .link:active{
+  color: blue;
+}
+@media screen and (max-width: 1026px) {
+ .category > div { 
+ width: 25%;
+ height: 5%;
+ border-radius: 50px;
+ font-size: 1.2rem;
+ 
+}
+.healthtips_desc{
+  font-size: 2.4rem;  
+  padding: 1.2rem; 
+ }
+  
+}
+@media screen and (max-width: 746px) {
+ .category > div { 
+ width: 45%;
+ height: 3%;
+ border-radius: 50px;
+ 
+}
+ .healthtips_desc{
+  font-size: 2rem;  
+  padding: 1rem; 
+ }
+}
+
+@media screen and (max-width: 640px) {
+ .category > div{
+  width: 100%;
+ }
+ .healthtips_desc{
+  font-size: 1.5rem;
+  padding: 0.8rem;
+ 
+ } 
+}

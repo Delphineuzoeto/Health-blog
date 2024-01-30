@@ -1,0 +1,77 @@
+ 
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 5rem;
+	flex: 1;
+	 
+	 
+}
+
+.socials{
+	display: flex;
+	gap: 0.5rem;
+	flex: 1;
+}
+.Logo{
+	font-size: 2rem;
+	flex: 1;
+	font-weight: 900;
+	color: var(--sec-color);
+}
+.links{
+	display: flex;
+	font-size: 0.7rem;
+	gap: 20px;
+	flex: 2;
+	font-weight: 800;
+	align-items: center;
+	justify-content: space-between;
+}
+ 
+@media screen and (max-width: 1024px){
+	.socials{ 
+	display: none;
+	}
+.Logo{
+	font-size: 1.5rem;
+	text-align: left;
+	 
+}
+.links{
+	font-size: 0.6rem;
+	gap: 0.4rem;
+
+	
+}
+}
+@media screen and (max-width: 756px){
+.Logo{
+	font-size: 1rem;
+	flex: 1;
+	 
+}
+.links{
+	font-size: 0.6rem;
+	gap: 0.5rem;
+ font-weight: 800;
+ flex: 1;
+	
+}
+.socials{
+	flex: 1;
+}
+}
+@media screen and (max-width: 640px){
+.Logo{
+	font-size: 1.3rem; 
+}
+ 
+.link{
+	display: none;	
+}
+.links{
+	justify-content: flex-end;
+}
+}

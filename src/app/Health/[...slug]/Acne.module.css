@@ -1,0 +1,101 @@
+.container{
+	display: flex;
+	gap: 30px;
+	margin-top: 2rem;
+}
+
+.sub_container{
+	flex: 5;
+}
+.title{
+	color: grey;
+
+}
+
+.description{
+	font-size: 1.5rem;
+	padding: 2rem 0;
+	line-height: 1.5;
+	word-spacing: 2%;
+}
+
+.sub_container b,
+.treatment_desc p{
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: gray;
+}
+
+.sub_container h4{
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+
+.sub_container ul{
+	list-style-type: circle;
+}
+
+.sub_container ul>li{
+	padding-left: 1rem;
+	line-height: 1.5;
+	word-spacing: 0.8%;
+	margin: 0.5rem 0;
+	font-size: 1.5rem;
+}
+.sub_container ul>li :first-child{
+	margin: 0.5rem 0;	 
+}
+.acne_myths p{
+	font-size: 1.2rem;
+}
+.acne_myths > div{
+	margin: 1rem 0;
+}
+ .acne_myths b{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: gray;
+ }
+.no_content{
+	flex: 1;
+}
+
+@media screen and (max-width:748px) {
+ 
+	.no_content{
+	display: none;
+}
+}
+@media screen and (max-width:640px) {
+	.title{
+font-size: 2rem;
+
+}
+	.description{
+	font-size: 1.2rem;
+	padding: 1rem 0;
+	 
+}
+
+.sub_container b,
+.treatment_desc p{
+	font-size: 1.3rem;
+	 
+}
+
+.sub_container h4{
+	font-size: 1.5rem;
+	padding: 1rem 0;
+}
+
+
+.sub_container ul>li{
+	padding-left: 0;
+	margin: 0.5rem 0;
+	font-size: 1.2rem;
+}
+ 
+	.no_content{
+	display: none;
+}
+}
